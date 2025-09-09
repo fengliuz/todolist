@@ -1,0 +1,15 @@
+/* Biar layout selalu fit ke layar hape */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Supaya elemen card/input tidak melebar */
+.container, .row, .col-12, .col-md-6, .card, .input-group {
+  max-width: 100%;
+}
+
+.input-group {
+  flex-wrap: nowrap; /* jangan pecah tapi tetap muat */
+  overflow-x: auto;  /* kalau benar-benar panjang, bisa scroll sendiri */
+}
